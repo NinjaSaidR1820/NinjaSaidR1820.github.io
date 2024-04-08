@@ -567,14 +567,14 @@ section{
 
     .navlist {
         position: absolute;
-        top: 80px; /* ajusta según sea necesario */
+        top: 100px; /* ajusta según sea necesario */
         right: 0;
         left: 0;
         display: none; /* Cambiado a 'none' para ocultar inicialmente en dispositivos móviles */
         flex-direction: column;
         background-color: var(--bg-color);
         text-align: left;
-        transition: all .45s ease;
+        transition: all 1.45s ease;
     }
 
     .navlist a {
