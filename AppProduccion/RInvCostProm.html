@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rotacion de Inv. Costo Prom.</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Rotacion de Inv. Costo Prom.</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet"
+            href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+        <style>
         /* Estilos personalizados para campos de entrada y selectores */
         input[type="number"],
         select {
@@ -39,53 +42,61 @@
             transition: all .45s ease;
         }
     </style>
-</head>
-<body>
+    </head>
+    <body>
 
-<header>
-    <a href="index.html" class="logo"> Dream<span>Team</span>.</a>
-    <ul class="navlist">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="index.html">About Project</a></li>
-        <li><a href="Portfolio.html">Methods</a></li>
-        <li><a href="ContactMe.html">Contact Me</a></li>
-    </ul>
-    <div class="bx bx-menu" id="menu-icon"></div>
-</header>
+        <header>
+            <a href="index.html" class="logo"> Dream<span>Team</span>.</a>
+            <ul class="navlist">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">About Project</a></li>
+                <li><a href="Portfolio.html">Methods</a></li>
+                <li><a href="ContactMe.html">Contact Me</a></li>
+            </ul>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </header>
 
-<section class="contact" id="contact">
-    <div class="contact-form">
-        <form id="inventoryForm">
-            <label for="demand">Demanda (d):</label>
-            <input type="number" placeholder="Ingrese la demanda" id="demand" min="0" required><br><br>
-            
-            <label for="cycle">Ciclo de Revisión (T):</label>
-            <input type="number" placeholder="Ingrese el ciclo de revisión" id="cycle" min="0" required><br><br>
-            
-            <label for="safetyStock">Inventario de Seguridad:</label>
-            <input type="number" placeholder="Ingrese el inventario de seguridad" id="safetyStock" min="0" required><br><br>
-            
-            <label for="weeks">Número de Semanas para el Año:</label>
-            <input type="number" placeholder="Ingrese el número de semanas" id="weeks" min="0" required><br><br>
-            
-            <button type="button" onclick="calculateRotation()">Calcular Rotación</button>
-        </form>
-        <div id="result"></div>
-    </div>
-</section>
+        <section class="contact" id="contact">
+            <div class="contact-form">
+                <form id="inventoryForm">
+                    <label for="demand">Demanda (d):</label>
+                    <input type="number" placeholder="Ingrese la demanda"
+                        id="demand" min="0" required><br><br>
 
-<section class="end">
-    <div class="last-text">
-        <p>Copyright © 2023 by NinjaSaidR1820 All Rights Reserved </p>
-    </div>
-    <div class="top">
-        <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
-    </div>
-</section>
+                    <label for="cycle">Ciclo de Revisión (T):</label>
+                    <input type="number"
+                        placeholder="Ingrese el ciclo de revisión" id="cycle"
+                        min="0" required><br><br>
 
-<script type="text/javascript" src="js/script.js"></script>
+                    <label for="safetyStock">Inventario de Seguridad:</label>
+                    <input type="number"
+                        placeholder="Ingrese el inventario de seguridad"
+                        id="safetyStock" min="0" required><br><br>
 
-<script>
+                    <label for="weeks">Número de Semanas para el Año:</label>
+                    <input type="number"
+                        placeholder="Ingrese el número de semanas" id="weeks"
+                        min="0" required><br><br>
+
+                    <button type="button" onclick="calculateRotation()">Calcular
+                        Rotación</button>
+                </form>
+                <div id="result"></div>
+            </div>
+        </section>
+
+        <section class="end">
+            <div class="last-text">
+                <p>Copyright © 2023 by NinjaSaidR1820 All Rights Reserved </p>
+            </div>
+            <div class="top">
+                <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+            </div>
+        </section>
+
+        <script type="text/javascript" src="js/script.js"></script>
+
+        <script>
     function calculateRotation() {
         var d = parseFloat(document.getElementById("demand").value);
         var T = parseFloat(document.getElementById("cycle").value);
@@ -116,5 +127,5 @@
     }
 </script>
 
-</body>
+    </body>
 </html>
